@@ -15,7 +15,12 @@ Category.init(
     },
     category_name: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
+      validat: {
+        notNull: {
+          msg: 'Please enter a Category name.'
+        }
+      }
     }
   },
   {
